@@ -18,6 +18,13 @@ LOCAL_PATH := device/google/sunfish
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS=false
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log \
+    ro.adb.secure=0 \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.debuggable=1 \
+    persist.service.adb.enable=1 \
+
 PRODUCT_VENDOR_MOVE_ENABLED := true
 TARGET_BOARD_PLATFORM := sm6150
 MSMSTEPPE := sm6150
