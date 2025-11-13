@@ -18,6 +18,8 @@ LOCAL_PATH := device/google/sunfish
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS=false
 
+PRODUCT_ENABLE_UFFD_GC=false
+
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log \
     ro.adb.secure=0 \
